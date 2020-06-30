@@ -2,6 +2,7 @@
 const os = require("os");
 
 if (os.arch() === "arm64") {
+    
     // For arm64 architecture, install chromium-browser using "apt-get install chromium-browser"
     process.env.CHROME_BIN = "/usr/bin/chromium-browser";
 } else {
